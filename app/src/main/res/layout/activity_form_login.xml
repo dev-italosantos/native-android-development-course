@@ -11,16 +11,35 @@
         android:id="@+id/logo"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/profile_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
+        android:id="@+id/containerCard"
         style="@style/ContainerCard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        style="@style/EditText"
+        android:hint="Email"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@id/containerCard"
+        app:layout_constraintEnd_toEndOf="@id/containerCard"
+        app:layout_constraintTop_toTopOf="@id/containerCard" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        style="@style/EditText"
+        android:hint="Senha"
+        android:drawableRight="@drawable/ic_eye"
+        app:layout_constraintStart_toStartOf="@id/containerCard"
+        app:layout_constraintEnd_toEndOf="@id/containerCard"
+        app:layout_constraintTop_toBottomOf="@id/editEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
