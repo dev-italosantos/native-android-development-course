@@ -41,7 +41,7 @@ EM DESENVOLVIMENTO
 | ... | ![#f03c15](https://via.placeholder.com/20/D291BC/000000?text=+) #D291BC |Comuns |
 | gabriela |![#f03c15](https://via.placeholder.com/20/957DAD/000000?text=+) #957DAD |Comuns |
 | linda |![#f03c15](https://via.placeholder.com/20/2f2e41/000000?text=+) #2f2e41 |Textos |
-| esbelta |![#f03c15](https://via.placeholder.com/20/6c63ff/000000?text=+) #6c63ff |Textos |
+| esbelta |![#f03c15](https://via.placeholder.com/20/6c63ff/000000?text=+) #6c63ff |Items |
 | background |![#f03c15](https://via.placeholder.com/20/FFFFFF/000000?text=+) #FFFFFF |Items |
  
 
