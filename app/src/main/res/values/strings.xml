@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BootsM700</string>
+    <string name="app_entra">Entrar</string>
+    <string name="app_cadastrar">Novo aqui? Inscrever-se</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
 </resources>

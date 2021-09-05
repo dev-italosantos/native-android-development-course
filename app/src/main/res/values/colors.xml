@@ -7,7 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="maria">#E0BBE4</color>>
-    <color name="stefany">#D291BC</color>>
-    <color name="gabriela">#957DAD</color>>
+    <color name="maria">#E0BBE4</color>
+    <color name="stefany">#D291BC</color>
+    <color name="gabriela">#957DAD</color>
+    <color name="linda">#2f2e41</color>
+    <color name="esbelta">#6c63ff</color>
 </resources>
