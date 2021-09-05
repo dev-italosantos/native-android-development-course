@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".FormCadastro">
 
+
+    <TextView
+        android:id="@+id/titleCadastrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_cadastrese"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/containerCard"
+        style="@style/ContainerCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleCadastrese" />
+
+    <EditText
+        android:id="@+id/editName"
+        style="@style/EditText"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@id/containerCard"
+        app:layout_constraintEnd_toEndOf="@id/containerCard"
+        app:layout_constraintTop_toTopOf="@id/containerCard" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        style="@style/EditText"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email"
+        android:drawableEnd="@drawable/ic_email"
+        app:layout_constraintTop_toBottomOf="@id/editName"
+        app:layout_constraintStart_toStartOf="@id/containerCard"
+        app:layout_constraintEnd_toEndOf="@id/containerCard" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        style="@style/EditText"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_eye"
+        android:drawableEnd="@drawable/ic_eye"
+        app:layout_constraintStart_toStartOf="@id/containerCard"
+        app:layout_constraintEnd_toEndOf="@id/containerCard"
+        app:layout_constraintTop_toBottomOf="@id/editEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastra"
+        style="@style/Button"
+        android:text="@string/app_cadastra"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerCard"  />
 </androidx.constraintlayout.widget.ConstraintLayout>
