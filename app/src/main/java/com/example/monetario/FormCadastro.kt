@@ -1,21 +1,19 @@
 package com.example.monetario
 
+import android.content.ContentValues.TAG
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
-import android.content.ContentValues.TAG
-import android.util.Log
-
-import com.google.firebase.auth.FirebaseAuthUserCollisionException
-
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
-import java.lang.Exception
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 
 class FormCadastro : AppCompatActivity() {
@@ -31,8 +29,6 @@ class FormCadastro : AppCompatActivity() {
     }
 
     fun onClickBtnCadastra(@Suppress("UNUSED_PARAMETER")view: View?) {
-        var erro: String
-
         val editName: EditText = findViewById(R.id.editName)
         val editEmail: EditText = findViewById(R.id.editEmail)
         val editPassword: EditText = findViewById(R.id.editSenha)
@@ -61,13 +57,14 @@ class FormCadastro : AppCompatActivity() {
 
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if(task.isSuccessful){
+                saveDataUser()
+
                 val snack = Snackbar.make(view!!, "Registration performed successfully", Snackbar.LENGTH_SHORT)
 
                 snack.view.setBackgroundColor(Color.WHITE)
                 snack.setTextColor(Color.BLACK)
                 snack.show()
             } else {
-
                 val erroAuth: String = try {
                     throw  task.exception!!
                 } catch (e: FirebaseAuthWeakPasswordException) {
@@ -87,5 +84,24 @@ class FormCadastro : AppCompatActivity() {
                 snack.show()
             }
         }
+    }
+    private fun saveDataUser() {
+        val editName: EditText = findViewById(R.id.editName)
+        val name = editName.text.toString()
+
+        val db = Firebase.firestore
+
+        val user = HashMap<String, Any>()
+        user["name"] = name
+
+        db.collection("users")
+            .add(user)
+            .addOnSuccessListener { documentReference ->
+                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error adding document", e)
+            }
+
     }
 }
