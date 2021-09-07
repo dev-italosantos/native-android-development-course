@@ -4,10 +4,19 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
+import android.content.ContentValues.TAG
+import android.util.Log
+
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
+
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException
+import java.lang.Exception
+
 
 class FormCadastro : AppCompatActivity() {
     private lateinit var  auth: FirebaseAuth
@@ -22,6 +31,7 @@ class FormCadastro : AppCompatActivity() {
     }
 
     fun onClickBtnCadastra(@Suppress("UNUSED_PARAMETER")view: View?) {
+        var erro: String
 
         val editName: EditText = findViewById(R.id.editName)
         val editEmail: EditText = findViewById(R.id.editEmail)
@@ -43,7 +53,6 @@ class FormCadastro : AppCompatActivity() {
     }
 
     private fun cadastroUser(view: View?) {
-
         val editEmail: EditText = findViewById(R.id.editEmail)
         val editPassword: EditText = findViewById(R.id.editSenha)
 
@@ -57,10 +66,26 @@ class FormCadastro : AppCompatActivity() {
                 snack.view.setBackgroundColor(Color.WHITE)
                 snack.setTextColor(Color.BLACK)
                 snack.show()
+            } else {
+
+                val erroAuth: String = try {
+                    throw  task.exception!!
+                } catch (e: FirebaseAuthWeakPasswordException) {
+                    "Enter a password with at least 6 characters"
+                } catch (e: FirebaseAuthInvalidCredentialsException) {
+                    "E-mail invalid"
+                } catch (e: FirebaseAuthUserCollisionException) {
+                    "This account already exists"
+                } catch (e: Exception) {
+                    "Error registering user"
+                }
+
+                val snack = Snackbar.make(view!!, erroAuth, Snackbar.LENGTH_SHORT)
+
+                snack.view.setBackgroundColor(Color.WHITE)
+                snack.setTextColor(Color.BLACK)
+                snack.show()
             }
-        }.addOnFailureListener { exception ->
-            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
         }
     }
-    
 }
