@@ -62,9 +62,10 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCadastra"
         style="@style/Button"
+        android:onClick="onClickBtnCadastra"
         android:text="@string/app_cadastra"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/containerCard"  />
+        app:layout_constraintTop_toBottomOf="@id/containerCard" />
 </androidx.constraintlayout.widget.ConstraintLayout>
