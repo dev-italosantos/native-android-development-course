@@ -7,4 +7,10 @@
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
     <string name="app_cadastra">Cadastra</string>
+    <string name="app_hello">hello</string>
+    <string name="app_textuser">Italo Santos</string>
+    <string name="app_home">Home</string>
+    <string name="app_favorite">Favorite</string>
+    <string name="app_account">Account</string>
+    <string name="app_settings">Settings</string>
 </resources>
