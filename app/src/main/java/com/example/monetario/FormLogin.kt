@@ -86,6 +86,15 @@ class FormLogin : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+
+       val user = auth.currentUser
+        if (user != null) {
+            home()
+        }
+    }
+
     private fun home() {
         val intent = Intent(this, Home::class.java)
         startActivity(intent)

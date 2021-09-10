@@ -22,7 +22,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:text="@string/app_hello"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="15dp"
         android:text="@string/app_textuser"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/textHello"
