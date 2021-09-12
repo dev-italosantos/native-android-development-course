@@ -25,6 +25,7 @@ class FormLogin : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
     }
+
     fun onClickCadastro(@Suppress("UNUSED_PARAMETER")view: View?) {
         val intent = Intent(this, FormCadastro::class.java)
         startActivity(intent)
