@@ -13,13 +13,13 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_boots_logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/app_hello_user"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_boots_logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
@@ -33,6 +33,7 @@
         android:id="@+id/editEmail"
         style="@style/EditText"
         android:hint="@string/email"
+        android:autofillHints="userEmail"
         android:inputType="textEmailAddress"
         android:drawableRight="@drawable/ic_email"
         android:drawableEnd="@drawable/ic_email"
@@ -44,6 +45,7 @@
         android:id="@+id/editSenha"
         style="@style/EditText"
         android:hint="@string/senha"
+        android:autofillHints="userPassword"
         android:inputType="textPassword"
         android:drawableRight="@drawable/ic_eye"
         android:drawableEnd="@drawable/ic_eye"
@@ -54,17 +56,18 @@
         android:id="@+id/recuperacaoSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="25dp"
         android:text="@string/app_precisa_de_ajuda"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnEntrar"
+        app:layout_constraintEnd_toEndOf="@+id/editSenha"
         app:layout_constraintTop_toBottomOf="@id/editSenha"
-        tools:layout_editor_absoluteX="255dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEntrar"
-        android:onClick="onClickEntrar"
         style="@style/Button"
         android:text="@string/app_entra"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,11 +78,12 @@
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:indeterminateTint="@color/esbelta"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerCard"
         tools:targetApi="lollipop" />
 
@@ -87,7 +91,7 @@
         android:id="@+id/txtCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:minHeight="48dp"
         android:onClick="onClickCadastro"
         android:text="@string/app_cadastrar"

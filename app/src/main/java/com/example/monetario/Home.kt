@@ -46,7 +46,7 @@ class Home : AppCompatActivity() {
 
         val user = auth.currentUser?.email
 
-        val docRef = db.collection("users").document(user!!)
+        val docRef = db.collection("users").document("O1EY32OefNC6udbeXp6H")
 
         docRef.get().addOnSuccessListener { documentSnapshot ->
             if (documentSnapshot != null) {
