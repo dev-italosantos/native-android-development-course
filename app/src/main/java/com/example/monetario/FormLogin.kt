@@ -26,7 +26,7 @@ class FormLogin : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        reset()
+        loginEntrar()
     }
 
     fun onClickCadastro(@Suppress("UNUSED_PARAMETER") view: View?) {
@@ -35,34 +35,28 @@ class FormLogin : AppCompatActivity() {
     }
 
 
-     private fun reset() {
+    private fun loginEntrar() {
         val btnEntrar: AppCompatButton = findViewById(R.id.btnEntrar)
-
         btnEntrar.setOnClickListener {
 
-loginEntar(view = null)
-        }
-     }
+            val editEmail: EditText = findViewById(R.id.editEmail)
+            val editPassword: EditText = findViewById(R.id.editSenha)
 
-    private fun loginEntar(view: View?) {
-        val editEmail: EditText = findViewById(R.id.editEmail)
-        val editPassword: EditText = findViewById(R.id.editSenha)
+            val email = editEmail.text.toString()
+            val password = editPassword.text.toString()
 
-        val email = editEmail.text.toString()
-        val password = editPassword.text.toString()
+            if (email.isEmpty() || password.isEmpty()) {
+                val snack =
+                    Snackbar.make(it, "This is a simple Snackbar", Snackbar.LENGTH_SHORT)
 
-        if (email.isEmpty() || password.isEmpty()) {
-            val snack =
-                Snackbar.make(view!!, "This is a simple Snackbar", Snackbar.LENGTH_SHORT)
-
-            snack.view.setBackgroundColor(Color.WHITE)
-            snack.setTextColor(Color.BLACK)
-            snack.show()
-        } else {
-            loginUser(view)
+                snack.view.setBackgroundColor(Color.WHITE)
+                snack.setTextColor(Color.BLACK)
+                snack.show()
+            } else {
+                loginUser(it)
+            }
         }
     }
-
 
 //    fun onClickEntrar(@Suppress("UNUSED_PARAMETER")view: View?) {
 //        val editEmail: EditText = findViewById(R.id.editEmail)
@@ -82,7 +76,7 @@ loginEntar(view = null)
 //        }
 //    }
 
-    private fun loginUser(view: View?) {
+    private fun loginUser(view: View) {
         val editEmail: EditText = findViewById(R.id.editEmail)
         val editPassword: EditText = findViewById(R.id.editSenha)
 
@@ -111,7 +105,7 @@ loginEntar(view = null)
                     "Error registering user"
                 }
 
-                val snack = Snackbar.make(view!!, erroAuth, Snackbar.LENGTH_SHORT)
+                val snack = Snackbar.make(view, erroAuth, Snackbar.LENGTH_SHORT)
 
                 snack.view.setBackgroundColor(Color.WHITE)
                 snack.setTextColor(Color.BLACK)
