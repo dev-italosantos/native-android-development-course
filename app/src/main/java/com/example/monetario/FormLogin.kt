@@ -34,11 +34,10 @@ class FormLogin : AppCompatActivity() {
         startActivity(intent)
     }
 
-
     private fun loginEntrar() {
         val btnEntrar: AppCompatButton = findViewById(R.id.btnEntrar)
-        btnEntrar.setOnClickListener {
 
+        btnEntrar.setOnClickListener {
             val editEmail: EditText = findViewById(R.id.editEmail)
             val editPassword: EditText = findViewById(R.id.editSenha)
 
@@ -57,24 +56,6 @@ class FormLogin : AppCompatActivity() {
             }
         }
     }
-
-//    fun onClickEntrar(@Suppress("UNUSED_PARAMETER")view: View?) {
-//        val editEmail: EditText = findViewById(R.id.editEmail)
-//        val editPassword: EditText = findViewById(R.id.editSenha)
-//
-//        val email = editEmail.text.toString()
-//        val password = editPassword.text.toString()
-//
-//        if (email.isEmpty() || password.isEmpty()) {
-//            val snack = Snackbar.make(view!!, "This is a simple Snackbar", Snackbar.LENGTH_SHORT)
-//
-//            snack.view.setBackgroundColor(Color.WHITE)
-//            snack.setTextColor(Color.BLACK)
-//            snack.show()
-//        } else {
-//            loginUser(view)
-//        }
-//    }
 
     private fun loginUser(view: View) {
         val editEmail: EditText = findViewById(R.id.editEmail)

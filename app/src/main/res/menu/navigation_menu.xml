@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_account_circle"
         android:title="@string/app_account" />
     <item
-        android:id="@+id/menu"
+        android:id="@+id/menuSettings"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="@string/app_settings" />
 </menu>
