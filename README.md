@@ -38,7 +38,7 @@ EM DESENVOLVIMENTO
 | Color Name | Hexadecimal | Tipo | :/ |
 |--|--|--|--|
 | maria |![#f03c15](https://via.placeholder.com/20/E0BBE4/000000?text=+) #E0BBE4 |Comuns |
-| 01110011 01110100 01100101 01100110 01100001 01101110 01111001  | ![#f03c15](https://via.placeholder.com/20/D291BC/000000?text=+) #D291BC |Comuns |
+| 01110011 01110100 01100101 01100110 01100001 01101110 01111001  | ![#f03c15](https://via.placeholder.com/20/D291BC/000000?text=+) #D291BC |👑 |
 | gabriela |![#f03c15](https://via.placeholder.com/20/957DAD/000000?text=+) #957DAD |Comuns |
 | linda |![#f03c15](https://via.placeholder.com/20/2f2e41/000000?text=+) #2f2e41 |Textos |
 | esbelta |![#f03c15](https://via.placeholder.com/20/6c63ff/000000?text=+) #6c63ff |Items |
