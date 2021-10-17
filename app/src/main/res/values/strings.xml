@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">BootsM700</string>
+    <string name="app_name">coroada</string>
     <string name="app_entra">Entrar</string>
     <string name="app_cadastrar">Novo aqui? Inscrever-se</string>
     <string name="app_cadastrese">Cadastre-se</string>
     <string name="email">Email</string>
+    <string name="enter_useremail">E-mail do usuário</string>
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
     <string name="app_cadastra">Cadastra</string>
@@ -15,6 +16,8 @@
     <string name="app_precisa_de_ajuda">Precisa de ajuda?</string>
     <string name="app_hello_user">Imagem tela de login :/ hello user</string>
     <string name="app_enviar_sms">Enviar Sms</string>
+    <string name="app_login">Login</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_enviar">Enviar</string>
 </resources>

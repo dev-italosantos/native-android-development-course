@@ -23,7 +23,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEnviar"
         style="@style/ButtonSms"
-        android:text="Enviar"
+        android:text="@string/app_enviar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleSms" />
