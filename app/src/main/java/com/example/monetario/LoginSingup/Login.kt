@@ -2,6 +2,7 @@ package com.example.monetario.LoginSingup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.monetario.R
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
