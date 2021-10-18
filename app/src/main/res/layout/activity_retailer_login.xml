@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginSingup.Login"
     android:background="@color/stefany"
-    android:padding="30dp">
+    android:padding="30dp"
+    tools:context=".LoginSingup.Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,7 +76,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -89,7 +89,35 @@
                     android:buttonTint="@color/black"
                     android:textColor="@color/black"/>
 
-                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_login"
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Create Account!"
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>
