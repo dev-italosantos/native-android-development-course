@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/stefany"
     android:padding="30dp"
-    tools:context=".LoginSingup.Login">
+    tools:context=".loginSingup.Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +36,7 @@
             android:layout_marginTop="90dp">
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -56,6 +57,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -102,14 +104,17 @@
 
             </RelativeLayout>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEnter"
+                android:onClick="onClickBtnEnter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="@string/app_login"
                 android:background="@color/linda"
                 android:backgroundTint="@color/linda"
                 android:textColor="@color/white"
-                android:layout_marginTop="20dp"/>
+                tools:ignore="OnClick" />
 
             <TextView
                 android:layout_width="wrap_content"

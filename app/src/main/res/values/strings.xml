@@ -24,4 +24,7 @@
     <string name="lembre_de_mim">lembre de mim</string>
     <string name="forget_password">Esqueceu sua senha?</string>
     <string name="app_criar_conta">Criar Conta!</string>
+    <string name="app_escolhar_um_numero_entre">Escolhar um número entre 0 e 10</string>
+    <string name="app_btn_jogar">JOGAR</string>
+    <string name="app_subtitle_nenhum_numero_selecionado">Nenhum número selecionado!</string>
 </resources>
