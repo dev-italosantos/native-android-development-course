@@ -1,4 +1,4 @@
-package com.example.monetario.prizeDraw;
+package com.example.monetario.view.prizeDraw;
 
 import androidx.appcompat.app.AppCompatActivity;
 

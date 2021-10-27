@@ -27,4 +27,5 @@
     <string name="app_escolhar_um_numero_entre">Escolhar um número entre 0 e 10</string>
     <string name="app_btn_jogar">JOGAR</string>
     <string name="app_subtitle_nenhum_numero_selecionado">Nenhum número selecionado!</string>
+    <string name="app_aprenda_sobre_edi_o_de_imagens">Aprenda sobre edição de imagens</string>
 </resources>
