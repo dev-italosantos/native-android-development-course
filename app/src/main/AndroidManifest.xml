@@ -14,8 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
-            android:name=".view.prizeDraw.constraintLayout.ConstraintLayout"
-            android:exported="false" />
+            android:name=".view.prizeDraw.PrizeDrawActivity"
+            android:exported="true" />
         <activity
             android:name=".loginSingup.Login"
             android:exported="true" />
@@ -31,7 +31,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <activity android:name=".view.prizeDraw.PrizeDrawActivity">
+        <activity android:name=".view.prizeDraw.constraintLayout.ConstraintLayout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

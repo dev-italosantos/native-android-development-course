@@ -1,5 +1,6 @@
 package com.example.monetario.view.prizeDraw;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -19,6 +20,10 @@ public class PrizeDrawActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prize_draw);
         clickJogar();
+
+        ActionBar actionBar=getSupportActionBar();
+        assert actionBar != null;
+        actionBar.hide();
     }
 
     private void clickJogar() {
