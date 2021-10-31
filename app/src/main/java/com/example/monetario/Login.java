@@ -1,4 +1,4 @@
-package com.example.monetario.view.prizeDraw.constraint;
+package com.example.monetario;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,31 +8,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.monetario.R;
+import com.example.monetario.view.prizeDraw.constraint.ConstraintLayout;
 import com.example.monetario.view.prizeDraw.netfilx.NetflixActivity;
 
-public class ConstraintLayout extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_constrant);
+        setContentView(R.layout.activity_login);
 
         ActionBar actionBar=getSupportActionBar();
         assert actionBar != null;
         actionBar.hide();
 
-        proxLayout();
+        login();
     }
-//    app:endIconMode="clear_text"
 
-    private void proxLayout() {
-        Button btnProx = findViewById(R.id.btnProx);
+    private void login() {
+        Button btnProx = findViewById(R.id.btnEnter);
 
         btnProx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ConstraintLayout.this, NetflixActivity.class);
+                Intent intent = new Intent(Login.this, ConstraintLayout.class);
                 startActivity(intent);
             }
         });

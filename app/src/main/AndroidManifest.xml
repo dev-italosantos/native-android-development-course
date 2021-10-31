@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
+            android:name=".loginSingup.Login"
+            android:exported="true" />
+        <activity
             android:name=".view.prizeDraw.netfilx.NetflixActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".view.prizeDraw.PrizeDrawActivity"
             android:exported="true" />
         <activity
-            android:name=".loginSingup.Login"
+            android:name=".view.prizeDraw.constraint.ConstraintLayout"
             android:exported="true" />
         <activity
             android:name=".FormLogin"
@@ -34,7 +37,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <activity android:name=".view.prizeDraw.constraint.ConstraintLayout">
+        <activity
+            android:name=".Login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

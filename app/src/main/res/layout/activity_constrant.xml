@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@color/stefany" >
+    android:background="@color/app_fundp" >
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -16,11 +16,11 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_banner_image"
+        app:srcCompat="@drawable/ic_banner_creativity"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
@@ -32,6 +32,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/app_aprenda_sobre_edi_o_de_imagens"
         android:textSize="16sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView"/>
@@ -44,12 +45,13 @@
         android:layout_marginRight="16dp"
         android:text="10/12/2021"
         android:textSize="12sp"
+        android:textColor="@color/white"
         app:layout_constraintBaseline_toBaselineOf="@+id/textTitleConstraint"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textDescriptionConstraint"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -57,7 +59,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/app_description_constraint"
+        android:textColor="@color/white"
         android:gravity="fill_horizontal"
+        android:justificationMode="inter_word"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDateConstraint" />
