@@ -1,10 +1,6 @@
-<p align="center">
-      <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3b49607-4643-471d-8e63-1d4d1365dffb/undraw_Developer_activity_re_39tg.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210905%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210905T230508Z&X-Amz-Expires=86400&X-Amz-Signature=e1db7fb28b4a47f96fdfa048e1563fae4584183e40f0320b43b40b029fb1f91c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22undraw_Developer_activity_re_39tg.svg%22" width="100" alt="Logo"/>
-</p>
+<p align="center">👑</p>
 
 Crie aplicativos Android melhores com mais rapidez usando Kotlin. Seja para criação em dispositivos Android, Wear OS by Google, Android TV, Android Auto ou Android Things.
-
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ae0ecefb-b2bf-43db-8683-0e2e34d937d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210905%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210905T223458Z&X-Amz-Expires=86400&X-Amz-Signature=14fe191795d00cf9f1f2a5dac72ee2a3afb167fad00610d3ab510de6e6df255e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
 
 ## ⚠️ Requirements
 
@@ -24,7 +20,8 @@ amostras, orientação sobre desenvolvimento móvel e uma referência completa d
 - [x] A arquitetura do Projeto
 - [x] Criando a Login Page
 - [x] Criando a Cadastro Page
-- [x] Criar a estrutura base da Home Page
+- [x] Criando a estrutura base da Home Page
+- [x] Criando pages para navegação do App.
 - [x] Firebase
 - [x] Sistema de autenticação do App
 - [x] Rotas de navegação
