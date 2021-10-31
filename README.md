@@ -20,7 +20,8 @@ amostras, orientação sobre desenvolvimento móvel e uma referência completa d
 - [x] A arquitetura do Projeto
 - [x] Criando a Login Page
 - [x] Criando a Cadastro Page
-- [x] Criar a estrutura base da Home Page
+- [x] Criando a estrutura base da Home Page
+- [x] Criando pages para navegação do App.
 - [x] Firebase
 - [x] Sistema de autenticação do App
 - [x] Rotas de navegação
