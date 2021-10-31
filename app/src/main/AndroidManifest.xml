@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
+            android:name=".view.prizeDraw.netfilx.NetflixActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.prizeDraw.PrizeDrawActivity"
             android:exported="true" />
         <activity
@@ -31,7 +34,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <activity android:name=".view.prizeDraw.constraintLayout.ConstraintLayout">
+        <activity android:name=".view.prizeDraw.constraint.ConstraintLayout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
