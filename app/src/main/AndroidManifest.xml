@@ -14,10 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
-            android:name=".loginSingup.Login"
-            android:exported="true" />
-        <activity
             android:name=".view.prizeDraw.netfilx.NetflixActivity"
+            android:screenOrientation="sensor"
             android:exported="true" />
         <activity
             android:name=".view.prizeDraw.PrizeDrawActivity"
