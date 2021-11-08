@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.example.monetario.R;
 import com.example.monetario.view.prizeDraw.netfilx.NetflixActivity;
+import com.example.monetario.view.prizeDraw.phrase.PhraseDay;
 
 public class ConstraintLayout extends AppCompatActivity {
 
@@ -22,6 +23,8 @@ public class ConstraintLayout extends AppCompatActivity {
         assert actionBar != null;
         actionBar.hide();
 
+        antLayout();
+
         proxLayout();
     }
 //    app:endIconMode="clear_text"
@@ -33,6 +36,18 @@ public class ConstraintLayout extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ConstraintLayout.this, NetflixActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void antLayout() {
+        Button btnAnt = findViewById(R.id.btnAnt);
+
+        btnAnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ConstraintLayout.this, PhraseDay.class);
                 startActivity(intent);
             }
         });
