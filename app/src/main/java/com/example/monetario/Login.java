@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.monetario.view.prizeDraw.constraint.ConstraintLayout;
-import com.example.monetario.view.prizeDraw.netfilx.NetflixActivity;
 
 public class Login extends AppCompatActivity {
 

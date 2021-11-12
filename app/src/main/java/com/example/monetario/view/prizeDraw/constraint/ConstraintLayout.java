@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.monetario.R;
-import com.example.monetario.view.prizeDraw.netfilx.NetflixActivity;
-import com.example.monetario.view.prizeDraw.phrase.PhraseDay;
+import com.example.monetario.course.netfilx.NetflixActivity;
+import com.example.monetario.course.phrase.PhraseDay;
 
 public class ConstraintLayout extends AppCompatActivity {
 

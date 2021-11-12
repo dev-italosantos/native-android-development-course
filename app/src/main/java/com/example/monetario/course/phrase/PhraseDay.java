@@ -1,17 +1,14 @@
-package com.example.monetario.view.prizeDraw.phrase;
+package com.example.monetario.course.phrase;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.monetario.R;
-import com.example.monetario.view.prizeDraw.constraint.ConstraintLayout;
-import com.example.monetario.view.prizeDraw.netfilx.NetflixActivity;
 
 import java.util.Random;
 
