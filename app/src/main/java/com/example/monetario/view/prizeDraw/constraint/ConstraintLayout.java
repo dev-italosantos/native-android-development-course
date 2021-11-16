@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.monetario.R;
+import com.example.monetario.course.jokenpo.JokenpoActivity;
 import com.example.monetario.course.netfilx.NetflixActivity;
 import com.example.monetario.course.phrase.PhraseDay;
 
@@ -35,7 +36,7 @@ public class ConstraintLayout extends AppCompatActivity {
         btnProx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ConstraintLayout.this, NetflixActivity.class);
+                Intent intent = new Intent(ConstraintLayout.this, JokenpoActivity.class);
                 startActivity(intent);
             }
         });

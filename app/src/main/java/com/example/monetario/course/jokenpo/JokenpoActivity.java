@@ -4,6 +4,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+
 import com.example.monetario.R;
 
 public class JokenpoActivity extends AppCompatActivity {
@@ -16,5 +18,21 @@ public class JokenpoActivity extends AppCompatActivity {
         ActionBar actionBar=getSupportActionBar();
         assert actionBar != null;
         actionBar.hide();
+    }
+
+    public void selecionaPedra(View view) {
+
+    }
+
+    public void selecionaPapel(View view) {
+
+    }
+
+    public void selecionaTesoura(View view) {
+
+    }
+
+    public void opcaoSelecionada(String opcaoSelecionada) {
+
     }
 }
