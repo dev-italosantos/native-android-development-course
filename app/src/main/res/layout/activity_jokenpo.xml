@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_fundp"
-    android:onClick="selecionaTesoura"
     tools:context=".course.jokenpo.JokenpoActivity">
 
     <ImageView
@@ -13,6 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="32dp"
+        android:onClick="selecionaTesoura"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/imageJokenpo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -63,7 +63,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/imageJokenpo" />
 
     <ImageView
         android:id="@+id/imageView12"
