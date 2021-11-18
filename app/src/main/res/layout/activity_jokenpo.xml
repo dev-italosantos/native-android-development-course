@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textResult"
         app:srcCompat="@drawable/tesoura" />
 
     <ImageView
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textResult"
         app:srcCompat="@drawable/pedra" />
 
     <TextView
@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/padrao" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -74,6 +74,6 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView14"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textResult"
         app:srcCompat="@drawable/papel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
