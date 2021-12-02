@@ -21,18 +21,18 @@ public class Login extends AppCompatActivity {
         assert actionBar != null;
         actionBar.hide();
 
-        login();
+//        login();
     }
 
-    private void login() {
-        Button btnProx = findViewById(R.id.btnEnter);
-
-        btnProx.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, ConstraintLayout.class);
-                startActivity(intent);
-            }
-        });
-    }
+//    private void login() {
+//        Button btnProx = findViewById(R.id.btnEnter);
+//
+//        btnProx.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Login.this, Home.class);
+//                startActivity(intent);
+//            }
+//        });
+//    }
 }

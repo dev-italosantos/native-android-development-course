@@ -31,7 +31,7 @@
             android:name=".view.prizeDraw.constraint.ConstraintLayout"
             android:exported="true" />
         <activity
-            android:name=".FormLogin"
+            android:name=".Login"
             android:exported="true" />
         <activity
             android:name=".Home"
@@ -43,7 +43,7 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".Login"
+            android:name=".FormLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

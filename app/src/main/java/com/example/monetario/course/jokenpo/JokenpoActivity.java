@@ -56,13 +56,13 @@ public class JokenpoActivity extends AppCompatActivity {
                 imageJokenpo.setImageResource(R.drawable.tesoura);
                 break;
         }
-        if (opcaoApp == "tesoura" && opcaoSelecionada == "papel" ||
-                opcaoApp == "papel" && opcaoSelecionada == "pedra" ||
-                opcaoApp == "pedra" && opcaoSelecionada == "tesoura") {
+        if (opcaoApp.equals("tesoura") && opcaoSelecionada.equals("papel") ||
+                opcaoApp.equals("papel") && opcaoSelecionada.equals("pedra") ||
+                opcaoApp.equals("pedra") && opcaoSelecionada.equals("tesoura")) {
             textResult.setText("Você perdeu :/");
-        } else if (opcaoSelecionada == "tesoura" && opcaoApp == "papel" ||
-                opcaoSelecionada == "papel" && opcaoApp == "pedra" ||
-                opcaoSelecionada == "pedra" && opcaoApp == "tesoura") {
+        } else if (opcaoSelecionada.equals("tesoura") && opcaoApp.equals("papel") ||
+                opcaoSelecionada.equals("papel") && opcaoApp.equals("pedra") ||
+                opcaoSelecionada.equals("pedra") && opcaoApp.equals("tesoura")) {
             textResult.setText("Você ganhou :)");
         } else {
             textResult.setText("Empatamos");

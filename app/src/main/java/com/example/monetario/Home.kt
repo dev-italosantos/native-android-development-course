@@ -1,13 +1,29 @@
 package com.example.monetario
 
+import android.Manifest
 import android.annotation.SuppressLint
+import android.content.BroadcastReceiver
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
+import android.provider.Telephony
+import android.telephony.SmsMessage
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.fragment.app.Fragment
+import com.example.monetario.fragments.AccountFragment
+import com.example.monetario.fragments.FavoriteFragment
+import com.example.monetario.fragments.HomeFragment
+import com.example.monetario.fragments.SettingsFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -28,6 +44,35 @@ class Home : AppCompatActivity() {
 
         checkUser()
 
+        clickFragment()
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frameContainer, fragment)
+        transaction.commit()
+    }
+
+    private fun clickFragment() {
+        val btnNavigationView: BottomNavigationView = findViewById(R.id.btnNavigationView)
+
+        val settingsFragment = SettingsFragment()
+
+        val homeFragment = HomeFragment()
+
+        val favoriteFragment = FavoriteFragment()
+
+        val accountFragment = AccountFragment()
+
+        btnNavigationView.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.menuHome -> replaceFragment(homeFragment)
+                R.id.menuFavorite -> replaceFragment(favoriteFragment)
+                R.id.menuAccount -> replaceFragment(accountFragment)
+                R.id.menuSettings -> replaceFragment(settingsFragment)
+            }
+            true
+        }
     }
 
     fun onClickLogout(@Suppress("UNUSED_PARAMETER") view: View?) {
