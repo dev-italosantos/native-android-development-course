@@ -1,4 +1,4 @@
-package com.example.monetario.course.phrase;
+package com.example.monetario.view.course.phrase;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

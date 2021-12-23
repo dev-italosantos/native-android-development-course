@@ -14,33 +14,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
-            android:name=".course.jokenpo.JokenpoActivity"
+            android:name=".view.course.jokenpo.JokenpoActivity"
             android:exported="false" />
         <activity
-            android:name=".course.phrase.PhraseDay"
+            android:name=".view.course.phrase.PhraseDay"
             android:exported="true"
             android:screenOrientation="sensor" />
         <activity
-            android:name=".course.netfilx.NetflixActivity"
+            android:name=".view.course.netfilx.NetflixActivity"
             android:exported="true"
             android:screenOrientation="sensor" />
         <activity
-            android:name=".view.prizeDraw.PrizeDrawActivity"
+            android:name=".view.coronation.CoronationActivity"
             android:exported="true" />
         <activity
-            android:name=".view.prizeDraw.constraint.ConstraintLayout"
+            android:name=".view.coronation.constraint.ConstraintLayout"
             android:exported="true" />
         <activity
-            android:name=".Home"
+            android:name=".view.iuse.Home"
             android:exported="true" />
         <activity
-            android:name=".Register"
+            android:name=".view.ijon.Register"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".Login"
+            android:name=".view.ijon.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

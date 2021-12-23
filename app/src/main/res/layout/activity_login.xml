@@ -6,7 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/stefany"
 android:padding="30dp"
-tools:context=".Login">
+tools:context=".view.ijon.Login">
 
 <LinearLayout
     android:id="@+id/todoLinear"

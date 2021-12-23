@@ -1,4 +1,4 @@
-package com.example.monetario.course.netfilx;
+package com.example.monetario.view.course.netfilx;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

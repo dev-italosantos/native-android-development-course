@@ -1,4 +1,4 @@
-package com.example.monetario.view.prizeDraw.constraint;
+package com.example.monetario.view.coronation.constraint;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +9,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.monetario.R;
-import com.example.monetario.course.jokenpo.JokenpoActivity;
-import com.example.monetario.course.netfilx.NetflixActivity;
-import com.example.monetario.course.phrase.PhraseDay;
+import com.example.monetario.view.course.jokenpo.JokenpoActivity;
+import com.example.monetario.view.course.phrase.PhraseDay;
 
 public class ConstraintLayout extends AppCompatActivity {
 

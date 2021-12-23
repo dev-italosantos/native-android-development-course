@@ -1,4 +1,4 @@
-package com.example.monetario
+package com.example.monetario.view.ijon
 
 import android.content.ContentValues.TAG
 import android.graphics.Color
@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.monetario.R
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException

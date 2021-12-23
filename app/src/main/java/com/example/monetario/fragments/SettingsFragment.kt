@@ -1,15 +1,11 @@
 package com.example.monetario.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.AppCompatButton
-import com.example.monetario.Login
 import com.example.monetario.R
-import com.example.monetario.course.jokenpo.JokenpoActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

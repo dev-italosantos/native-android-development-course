@@ -1,4 +1,4 @@
-package com.example.monetario
+package com.example.monetario.view.iuse
 
 import android.annotation.SuppressLint
 import android.content.ContentValues.TAG
@@ -6,13 +6,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.monetario.R
 import com.example.monetario.fragments.AccountFragment
 import com.example.monetario.fragments.FavoriteFragment
 import com.example.monetario.fragments.HomeFragment
 import com.example.monetario.fragments.SettingsFragment
+import com.example.monetario.view.coronation.constraint.ConstraintLayout
+import com.example.monetario.view.course.jokenpo.JokenpoActivity
+import com.example.monetario.view.ijon.Login
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -35,6 +40,8 @@ class Home : AppCompatActivity() {
         checkUser()
 
         clickFragment()
+
+        layoutConstraint()
     }
 
     private fun replaceFragment(fragment: Fragment) {
@@ -103,6 +110,14 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
             finish()
+        }
+    }
+
+    private fun layoutConstraint() {
+        val btn = findViewById<Button>(R.id.btn)
+        btn.setOnClickListener {
+            val intent = Intent(this, ConstraintLayout::class.java)
+            startActivity(intent)
         }
     }
 }

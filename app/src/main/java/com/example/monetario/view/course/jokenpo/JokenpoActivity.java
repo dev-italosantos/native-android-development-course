@@ -1,4 +1,4 @@
-package com.example.monetario.course.jokenpo;
+package com.example.monetario.view.course.jokenpo;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

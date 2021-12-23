@@ -1,4 +1,4 @@
-package com.example.monetario.view.prizeDraw;
+package com.example.monetario.view.coronation;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +13,12 @@ import com.example.monetario.R;
 
 import java.util.Random;
 
-public class PrizeDrawActivity extends AppCompatActivity {
+public class CoronationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prize_draw);
+        setContentView(R.layout.activity_coronation);
         clickJogar();
 
         ActionBar actionBar=getSupportActionBar();
