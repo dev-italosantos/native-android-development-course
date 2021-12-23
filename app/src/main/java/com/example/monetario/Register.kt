@@ -16,12 +16,12 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 
-class FormCadastro : AppCompatActivity() {
+class Register : AppCompatActivity() {
     private lateinit var  auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_form_cadastro)
+        setContentView(R.layout.activity_register)
         supportActionBar?.hide()
 
         auth = FirebaseAuth.getInstance()

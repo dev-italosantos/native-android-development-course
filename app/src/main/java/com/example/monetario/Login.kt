@@ -15,25 +15,25 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 
-class FormLogin : AppCompatActivity() {
+class Login : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_form_login)
+        setContentView(R.layout.activity_login)
         supportActionBar?.hide()
 
         auth = FirebaseAuth.getInstance()
 
-        loginEntrar()
+        login()
     }
 
     fun onClickCadastro(@Suppress("UNUSED_PARAMETER") view: View?) {
-        val intent = Intent(this, FormCadastro::class.java)
+        val intent = Intent(this, Register::class.java)
         startActivity(intent)
     }
 
-    private fun loginEntrar() {
+    private fun login() {
         val btnEntrar: AppCompatButton = findViewById(R.id.btnEntrar)
 
         btnEntrar.setOnClickListener {
