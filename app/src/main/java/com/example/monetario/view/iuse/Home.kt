@@ -15,8 +15,8 @@ import com.example.monetario.fragments.AccountFragment
 import com.example.monetario.fragments.FavoriteFragment
 import com.example.monetario.fragments.HomeFragment
 import com.example.monetario.fragments.SettingsFragment
-import com.example.monetario.view.coronation.constraint.ConstraintLayout
 import com.example.monetario.view.course.jokenpo.JokenpoActivity
+import com.example.monetario.view.course.phrase.PhraseDay
 import com.example.monetario.view.ijon.Login
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -41,7 +41,9 @@ class Home : AppCompatActivity() {
 
         clickFragment()
 
-        layoutConstraint()
+        proxLayout()
+
+        antLayout()
     }
 
     private fun replaceFragment(fragment: Fragment) {
@@ -113,10 +115,18 @@ class Home : AppCompatActivity() {
         }
     }
 
-    private fun layoutConstraint() {
-        val btn = findViewById<Button>(R.id.btn)
-        btn.setOnClickListener {
-            val intent = Intent(this, ConstraintLayout::class.java)
+    private fun proxLayout() {
+        val btnProx = findViewById<Button>(R.id.btnProx)
+        btnProx.setOnClickListener {
+            val intent = Intent(this, JokenpoActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun antLayout() {
+        val btnAnt = findViewById<Button>(R.id.btnAnt)
+        btnAnt.setOnClickListener {
+            val intent = Intent(this, PhraseDay::class.java)
             startActivity(intent)
         }
     }

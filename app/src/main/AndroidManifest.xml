@@ -28,9 +28,6 @@
             android:name=".view.coronation.CoronationActivity"
             android:exported="true" />
         <activity
-            android:name=".view.coronation.constraint.ConstraintLayout"
-            android:exported="true" />
-        <activity
             android:name=".view.iuse.Home"
             android:exported="true" />
         <activity

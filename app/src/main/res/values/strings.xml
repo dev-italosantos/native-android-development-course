@@ -18,7 +18,6 @@
     <string name="app_hello_user">Imagem tela de login :/ hello user</string>
     <string name="app_enviar_sms">Enviar Sms</string>
     <string name="app_login">Login</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_enviar">Enviar</string>
     <string name="lembre_de_mim">lembre de mim</string>
@@ -30,4 +29,9 @@
     <string name="app_aprenda_sobre_edi_o_de_imagens">O nome kj8x94d significa coroa.</string>
     <string name="app_description_constraint">Costuma ser criativa e agir com felicidade para lidar com situações difíceis. 01110011 01110100 01100101 01100110 01100001 01101110 01111001 na maioria das vezes, é extremamente otimista e desligada de coisas banais. Problemas financeiros podem acarretar na perda de confiança para kj8x94d. Está sempre precisando de dinheiro para realizar-se. Busca sempre pessoas generosas e afeitvas que tragam coragem para afastar o fracasso.</string>
     <string name="app_nova_frase">Nova Frase</string>
+    <string name="app_logout">logout</string>
+    <string name="app_banner">banner</string>
+    <string name="app_date">10/12/2021</string>
+    <string name="app_proximo">Próximo</string>
+    <string name="app_anterior">Anterior</string>
 </resources>
