@@ -9,16 +9,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import com.example.monetario.R
-import com.example.monetario.fragments.AccountFragment
-import com.example.monetario.fragments.FavoriteFragment
-import com.example.monetario.fragments.HomeFragment
-import com.example.monetario.fragments.SettingsFragment
 import com.example.monetario.view.course.jokenpo.JokenpoActivity
 import com.example.monetario.view.course.phrase.PhraseDay
 import com.example.monetario.view.ijon.Login
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -39,39 +33,9 @@ class Home : AppCompatActivity() {
 
         checkUser()
 
-        clickFragment()
-
         proxLayout()
 
         antLayout()
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frameContainer, fragment)
-        transaction.commit()
-    }
-
-    private fun clickFragment() {
-        val btnNavigationView: BottomNavigationView = findViewById(R.id.btnNavigationView)
-
-        val settingsFragment = SettingsFragment()
-
-        val homeFragment = HomeFragment()
-
-        val favoriteFragment = FavoriteFragment()
-
-        val accountFragment = AccountFragment()
-
-        btnNavigationView.setOnNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.menuHome -> replaceFragment(homeFragment)
-                R.id.menuFavorite -> replaceFragment(favoriteFragment)
-                R.id.menuAccount -> replaceFragment(accountFragment)
-                R.id.menuSettings -> replaceFragment(settingsFragment)
-            }
-            true
-        }
     }
 
     fun logout(@Suppress("UNUSED_PARAMETER") view: View?) {

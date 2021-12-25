@@ -145,21 +145,4 @@
         app:layout_constraintVertical_bias="1.0"
         tools:targetApi="lollipop" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/btnNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:backgroundTint="@color/stefany"
-        app:itemIconSize="30dp"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/navigation_menu" />
-
-    <FrameLayout
-        android:id="@+id/frameContainer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@id/btnNavigationView"
-        />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
