@@ -12,7 +12,7 @@ import com.example.monetario.R;
 
 import java.util.Random;
 
-public class JokenpoActivity extends AppCompatActivity {
+public class Jokenpo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
