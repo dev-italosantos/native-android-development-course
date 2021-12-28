@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.monetario.R
+import com.example.monetario.view.course.alcoholOrGasoline.AlcoholOrGasoline
 import com.example.monetario.view.course.jokenpo.Jokenpo
 import com.example.monetario.view.course.phrase.PhraseDay
 import com.example.monetario.view.ijon.Login
@@ -82,7 +83,7 @@ class Home : AppCompatActivity() {
     private fun proxLayout() {
         val btnProx = findViewById<Button>(R.id.btnProx)
         btnProx.setOnClickListener {
-            val intent = Intent(this, Jokenpo::class.java)
+            val intent = Intent(this, AlcoholOrGasoline::class.java)
             startActivity(intent)
         }
     }
