@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import com.example.monetario.R;
 
-public class NetflixActivity extends AppCompatActivity {
+public class Netflix extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,21 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
+            android:name=".view.course.alcoholOrGasoline.AlcoholOrGasoline"
+            android:exported="false" />
+        <activity
             android:name=".view.ijon.Login"
             android:exported="true" />
         <activity
-            android:name=".view.course.jokenpo.JokenpoActivity"
+            android:name=".view.course.jokenpo.Jokenpo"
             android:exported="false" />
         <activity
             android:name=".view.course.phrase.PhraseDay"
             android:exported="true"
             android:screenOrientation="sensor" />
         <activity
-            android:name=".view.course.netfilx.NetflixActivity"
+            android:name=".view.course.netfilx.Netflix"
             android:exported="true"
             android:screenOrientation="sensor" />
         <activity
-            android:name=".view.coronation.CoronationActivity"
+            android:name=".view.coronation.Coronation"
             android:exported="true" />
         <activity
             android:name=".view.iuse.Home"

@@ -13,7 +13,7 @@ import com.example.monetario.R;
 
 import java.util.Random;
 
-public class CoronationActivity extends AppCompatActivity {
+public class Coronation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
