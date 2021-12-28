@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/app_fundp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
     android:padding="30dp"
     tools:context=".view.ijon.Beginning">
 
@@ -16,7 +17,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/ic_boots_logo" />
+            android:src="@drawable/ic_logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
             android:text="Grow \nYour Business"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="30sp" />
 
         <TextView
@@ -37,7 +38,7 @@
             android:fontFamily="@font/muli"
             android:text="We will help you to grow your business using online services!"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,9 +49,9 @@
                 android:id="@+id/btnLogin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:onClick="loginIjoin"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
+                android:onClick="loginIjoin"
                 android:text="Login"
                 android:textColor="@color/black"
                 app:backgroundTint="#D291BC" />
@@ -59,9 +60,9 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:onClick="registerIjoin"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
+                android:onClick="registerIjoin"
                 android:text="Registre-se"
                 android:textColor="@color/black"
                 app:backgroundTint="#D291BC" />
