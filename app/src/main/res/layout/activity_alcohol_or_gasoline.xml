@@ -49,6 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPriceAlcohol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço álcool ex: 1.90" />
@@ -68,6 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPriceGasoline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Preço gasolina ex. 5.789" />
@@ -89,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/result"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
