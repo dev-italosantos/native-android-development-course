@@ -12,7 +12,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class AlcoholOrGasoline extends AppCompatActivity {
     private TextInputEditText editPriceAlcohol, editPriceGasoline;
-    private TextView result;
+    private TextView textResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class AlcoholOrGasoline extends AppCompatActivity {
 
         editPriceAlcohol = findViewById(R.id.editPriceAlcohol);
         editPriceGasoline = findViewById(R.id.editPriceGasoline);
-        result = findViewById(R.id.result);
+        textResult = findViewById(R.id.textResult);
     }
 
     public void calculatePrice(View view) {
@@ -35,9 +35,19 @@ public class AlcoholOrGasoline extends AppCompatActivity {
         Boolean camposValidados = validarCampos(priceAlcohol, priceGasoline);
 
         if (camposValidados ) {
+            Double valueAlcohol = Double.parseDouble(priceAlcohol);
+            Double valueGasoline = Double.parseDouble(priceGasoline);
+
+            Double result = valueAlcohol / valueGasoline;
+
+            if ( result >= 0.7 ) {
+                textResult.setText("Melhor utilizar Gasolina");
+            } else {
+                textResult.setText("Melhor utilizar Alcool");
+            }
 
         } else {
-            result.setText("Preencha todos os campos promeiro!");
+            textResult.setText("Preencha todos os campos promeiro!");
         }
     }
 
