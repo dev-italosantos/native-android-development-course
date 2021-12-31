@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.monetario.R;
@@ -24,5 +25,32 @@ public class AlcoholOrGasoline extends AppCompatActivity {
 
         editPriceAlcohol = findViewById(R.id.editPriceAlcohol);
         editPriceGasoline = findViewById(R.id.editPriceGasoline);
+        result = findViewById(R.id.result);
+    }
+
+    public void calculatePrice(View view) {
+        String priceAlcohol = editPriceAlcohol.getText().toString();
+        String priceGasoline = editPriceGasoline.getText().toString();
+
+        Boolean camposValidados = validarCampos(priceAlcohol, priceGasoline);
+
+        if (camposValidados ) {
+
+        } else {
+            result.setText("Preencha todos os campos promeiro!");
+        }
+    }
+
+    public Boolean validarCampos(String pAlcohol, String pGasoline) {
+
+        Boolean camposValidados = true;
+
+        if (pAlcohol == null || pAlcohol.equals("")) {
+            camposValidados = false;
+        } else if (pGasoline == null || pGasoline.equals("")) {
+            camposValidados = false;
+        }
+
+        return camposValidados;
     }
 }
