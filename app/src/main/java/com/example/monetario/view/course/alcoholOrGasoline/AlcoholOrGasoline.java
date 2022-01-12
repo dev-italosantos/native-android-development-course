@@ -10,6 +10,8 @@ import android.widget.TextView;
 import com.example.monetario.R;
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.util.Objects;
+
 public class AlcoholOrGasoline extends AppCompatActivity {
     private TextInputEditText editPriceAlcohol, editPriceGasoline;
     private TextView textResult;
@@ -29,8 +31,8 @@ public class AlcoholOrGasoline extends AppCompatActivity {
     }
 
     public void calculatePrice(View view) {
-        String priceAlcohol = editPriceAlcohol.getText().toString();
-        String priceGasoline = editPriceGasoline.getText().toString();
+        String priceAlcohol = Objects.requireNonNull(editPriceAlcohol.getText()).toString();
+        String priceGasoline = Objects.requireNonNull(editPriceGasoline.getText()).toString();
 
         Boolean camposValidados = validarCampos(priceAlcohol, priceGasoline);
 
@@ -38,7 +40,7 @@ public class AlcoholOrGasoline extends AppCompatActivity {
             Double valueAlcohol = Double.parseDouble(priceAlcohol);
             Double valueGasoline = Double.parseDouble(priceGasoline);
 
-            Double result = valueAlcohol / valueGasoline;
+            double result = valueAlcohol / valueGasoline;
 
             if ( result >= 0.7 ) {
                 textResult.setText("Melhor utilizar Gasolina");
@@ -53,7 +55,7 @@ public class AlcoholOrGasoline extends AppCompatActivity {
 
     public Boolean validarCampos(String pAlcohol, String pGasoline) {
 
-        Boolean camposValidados = true;
+        boolean camposValidados = true;
 
         if (pAlcohol == null || pAlcohol.equals("")) {
             camposValidados = false;
