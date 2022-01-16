@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
         <activity
+            android:name=".view.course.gogetaCalculator.GogetaCalculator"
+            android:exported="false" />
+        <activity
             android:name=".view.course.alcoholOrGasoline.AlcoholOrGasoline"
             android:exported="true" />
         <activity
