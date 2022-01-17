@@ -10,8 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.monetario.R
-import com.example.monetario.view.course.alcoholOrGasoline.AlcoholOrGasoline
-import com.example.monetario.view.course.jokenpo.Jokenpo
+import com.example.monetario.view.course.gogetaCalculator.GogetaCalculator
 import com.example.monetario.view.course.phrase.PhraseDay
 import com.example.monetario.view.ijon.Login
 import com.google.firebase.auth.FirebaseAuth
@@ -47,7 +46,7 @@ class Home : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        val docRef = db.collection("users").document("O1EY32OefNC6udbeXp6H")
+        val docRef = db.collection("users").document("QTFtCer37vxiX8Xj0512")
 
         docRef.get().addOnSuccessListener { documentSnapshot ->
             if (documentSnapshot != null) {
@@ -83,7 +82,7 @@ class Home : AppCompatActivity() {
     private fun proxLayout() {
         val btnProx = findViewById<Button>(R.id.btnProx)
         btnProx.setOnClickListener {
-            val intent = Intent(this, AlcoholOrGasoline::class.java)
+            val intent = Intent(this, GogetaCalculator::class.java)
             startActivity(intent)
         }
     }

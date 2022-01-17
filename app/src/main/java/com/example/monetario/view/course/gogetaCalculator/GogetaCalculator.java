@@ -11,6 +11,6 @@ public class GogetaCalculator extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gogetas_calculator);
+        setContentView(R.layout.activity_gogeta_calculator);
     }
 }
