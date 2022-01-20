@@ -13,9 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Monetario">
-<!--        <activity-->
-<!--            android:name=".view.course.gogetaCalculator.GogetaCalculator"-->
-<!--            android:exported="true" />-->
+        <activity
+            android:name=".view.course.gogetaCalculator.GogetaCalculator"
+            android:exported="true" />
         <activity
             android:name=".view.course.alcoholOrGasoline.AlcoholOrGasoline"
             android:exported="false" />
@@ -46,7 +46,7 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".view.course.gogetaCalculator.GogetaCalculator"
+            android:name=".view.ijon.Beginning"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
